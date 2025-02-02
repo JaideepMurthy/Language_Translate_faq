@@ -17,35 +17,28 @@
 - Ensure tests pass before submitting a PR.
 
 ## Installation Steps
-### 1. Clone the Repository:
+1. Clone the Repository:
 
-git clone <repository_url>
-cd Language_Translate_faq
+`git clone <repository_url>`
+`cd Language_Translate_faq`
 
-### 2. Create and Activate Virtual Environment:
+2. Create and Activate Virtual Environment:
 
-python -m venv venv
-### On Windows
-.\venv\Scripts\activate
-### On macOS/Linux
-source venv/bin/activate
+ `python -m venv venv`
 
-### 3. Install Dependencies:
+ On Windows: `.\venv\Scripts\activate`
+ On macOS/Linux: `source venv/bin/activate`
 
-pip install -r requirements.txt
+3. Install Dependencies: `pip install -r requirements.txt`
 
-### 4. Run Migrations:
+4. Run Migrations:
 
-python manage.py makemigrations
-python manage.py migrate
+`python manage.py makemigrations`
+`python manage.py migrate`
 
-### 5. Create Superuser:
+5. Create Superuser: `python manage.py createsuperuser`
 
-python manage.py createsuperuser
-
-### 6. Start the Server:
-
-python manage.py runserver
+6. Start the Server: `python manage.py runserver`
 
 
 ## API Usage Examples
@@ -55,18 +48,22 @@ python manage.py runserver
 
  Fetch FAQs in Bengali: `curl http://localhost:8000/api/faqs/?lang=bn`
 
-## Contribution Guidelines
-Follow PEP8 Guidelines: Ensure your code adheres to PEP8 standards. Use tools like flake8 to check your code.
+### Contribution Guidelines
+In my project, I ensured that all contributions adhered to best practices and coding standards:
 
-Use Conventional Commit Messages: Follow conventional commit messages for clarity and consistency.
+I followed PEP8 guidelines to maintain clean and readable code. I used tools like flake8 to check for style violations and ensure consistency.
 
-git commit -m "feat: Add multilingual FAQ model"
-git commit -m "fix: Improve translation caching"
-git commit -m "docs: Update README with API examples"
+I followed conventional commit messages to keep version control organized and meaningful:
 
-Ensure Tests Pass: Write unit tests using pytest and ensure all tests pass before submitting a PR.
+`git commit -m "feat: Add multilingual FAQ model"`
+`git commit -m "fix: Improve translation caching"`
+`git commit -m "docs: Update README with API examples"`
 
-pytest
+I wrote unit tests using pytest to validate functionality and maintain reliability. Before every commit or pull request, I ensured that all tests passed successfully:
+
+`pytest`
+
+By following these practices, I maintained high code quality, clarity, and efficiency throughout the project.
 
 ## Docker Support 
 1. Build and Run Docker Containers:
