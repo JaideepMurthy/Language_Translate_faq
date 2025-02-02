@@ -17,49 +17,43 @@
 - Ensure tests pass before submitting a PR.
 
 ## Installation Steps
-1. Clone the Repository:
+### 1. Clone the Repository:
 
 git clone <repository_url>
 cd Language_Translate_faq
 
-2. Create and Activate Virtual Environment:
+### 2. Create and Activate Virtual Environment:
 
 python -m venv venv
-# On Windows
+### On Windows
 .\venv\Scripts\activate
-# On macOS/Linux
+### On macOS/Linux
 source venv/bin/activate
 
-3. Install Dependencies:
+### 3. Install Dependencies:
 
 pip install -r requirements.txt
 
-4. Run Migrations:
+### 4. Run Migrations:
 
 python manage.py makemigrations
 python manage.py migrate
 
-5. Create Superuser:
+### 5. Create Superuser:
 
 python manage.py createsuperuser
 
-6. Start the Server:
+### 6. Start the Server:
 
 python manage.py runserver
 
 
 ## API Usage Examples
-# Fetch FAQs in English (default):
+ Fetch FAQs in English (default): `curl http://localhost:8000/api/faqs/`
 
-curl http://localhost:8000/api/faqs/
+ Fetch FAQs in Hindi: `curl http://localhost:8000/api/faqs/?lang=hi`
 
-# Fetch FAQs in Hindi: 
-
-curl http://localhost:8000/api/faqs/?lang=hi
-
-# Fetch FAQs in Bengali:
-
-curl http://localhost:8000/api/faqs/?lang=bn
+ Fetch FAQs in Bengali: `curl http://localhost:8000/api/faqs/?lang=bn`
 
 ## Contribution Guidelines
 Follow PEP8 Guidelines: Ensure your code adheres to PEP8 standards. Use tools like flake8 to check your code.
